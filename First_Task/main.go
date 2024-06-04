@@ -4,17 +4,17 @@ import "fmt"
 
 func main() {
 
-	//    // accepts any character and display it on the terminal
+	   // accepts any character and display it on the terminal
 
-	// 	fmt.Println("enter any character")
+		// fmt.Println("enter any character")
 
-	// 	var d string
+		// var d string
 
-	// 	fmt.Scan(&d)
+		// fmt.Scan(&d)
 
-	// 	fmt.Printf("entered character is %v",d)
+		// fmt.Printf("entered character is %v",d)
 
-	// .  Accept two inputs from the user and output their sum.
+// 	.  Accept two inputs from the user and output their sum.
 
 	//   fmt.Println("enter two numbers")
 

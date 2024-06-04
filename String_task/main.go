@@ -3,17 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	// 	fmt.Println("Enter the string: ")
+		// fmt.Println("Enter the string: ")
 
-	// 	var arr string
+		// var arr string
 
-	// 	fmt.Scan(&arr)
+		// fmt.Scan(&arr)
 
-	// 	if Palindrome(arr) {
-	// 		fmt.Println("Palindrome")
-	// 	} else {
-	// 		fmt.Println("not Palindrome")
-	// 	}
+		// if Palindrome(arr) {
+		// 	fmt.Println("Palindrome")
+		// } else {
+		// 	fmt.Println("not Palindrome")
+		// }
 
 	fmt.Println("Enter the size of the array:")
 
@@ -22,12 +22,12 @@ func main() {
 
 	fmt.Println("Enter the values of the array1:")
 
-	// Create a two-dimensional slice
+
 	arr1 := make([][]int, size)
 	for i := 0; i < size; i++ {
-		arr1[i] = make([]int, size) // Initialize the inner slice
+		arr1[i] = make([]int, size) 
 		for j := 0; j < size; j++ {
-			fmt.Scan(&arr1[i][j]) // Scan values into the inner slice
+			fmt.Scan(&arr1[i][j]) 
 		}
 	}
 

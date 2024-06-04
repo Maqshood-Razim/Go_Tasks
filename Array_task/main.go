@@ -1,42 +1,45 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 
 	// Array swapping
 
-	fmt.Println("enter the size of arrays")
+	// fmt.Println("enter the size of arrays")
 
-	var size int
-	fmt.Scan(&size)
+	// var size int
+	// fmt.Scan(&size)
 
-	array1 := make([]int, size)
-	array2 := make([]int, size)
+	// array1 := make([]int, size)
+	// array2 := make([]int, size)
 
-	fmt.Println("enter the values in array 1")
+	// fmt.Println("enter the values in array 1")
 
-	for i := 0; i < size; i++ {
-		fmt.Scan(&array1[i])
-	}
+	// for i := 0; i < size; i++ {
+	// 	fmt.Scan(&array1[i])
+	// }
 
-	fmt.Println("enter the values in array 2")
+	// fmt.Println("enter the values in array 2")
 
-	for i := 0; i < size; i++ {
-		fmt.Scan(&array2[i])
-	}
+	// for i := 0; i < size; i++ {
+	// 	fmt.Scan(&array2[i])
+	// }
 
-	fmt.Println("array 1 ", array1)
-	fmt.Println("array 2 ", array2)
+	// fmt.Println("array 1 ", array1)
+	// fmt.Println("array 2 ", array2)
 
-	array3 := make([]int, size)
+	// array3 := make([]int, size)
 
-	array3 = array1
-	array1 = array2
-	array2 = array3
+	// array3 = array1
+	// array1 = array2
+	// array2 = array3
 
-	fmt.Println("array 1 after swapping ", array1)
-	fmt.Println("array 2 after swapping ", array2)
+	// fmt.Println("array 1 after swapping ", array1)
+	// fmt.Println("array 2 after swapping ", array2)
 
 	// Write a program to find the number of even numbers in an array
 
@@ -46,7 +49,7 @@ func main() {
 
 	// fmt.Scan(&limit)
 
-	// arr := make([]int,limit)
+	// arr := make([]int, limit)
 
 	// fmt.Println("enter the values")
 
@@ -55,38 +58,38 @@ func main() {
 
 	// }
 
-	// even :=0
+	// even := 0
 
-	// for _,value := range arr{
-	//      if value%2==0{
+	// for _, value := range arr {
+	// 	if value%2 == 0 {
 	// 		even++
-	// 	 }
+	// 	}
 
 	// }
 
-	// fmt.Printf("even number in array is %v ",even)
+	// fmt.Printf("even number in array is %v ", even)
 
 	//sorted array
 
-	// fmt.Println("enter array size")
+	fmt.Println("enter array size")
 
-	// var num int
+	var num int
 
-	// fmt.Scan(&num)
+	fmt.Scan(&num)
 
-	// arr1 := make([]int,num)
+	arr1 := make([]int, num)
 
-	// fmt.Println("enter array values")
+	fmt.Println("enter array values")
 
-	// for i := 0; i < num; i++ {
-	//    fmt.Scan(&arr1[i])
+	for i := 0; i < num; i++ {
+		fmt.Scan(&arr1[i])
 
-	// }
+	}
 
-	// fmt.Println(arr1)
+	fmt.Println(arr1)
 
-	//  sort.Ints(arr1)
+   sort.Sort(sort.Reverse(sort.IntSlice(arr1)))
 
-	// fmt.Println(arr1)
+	fmt.Println(arr1)
 
 }

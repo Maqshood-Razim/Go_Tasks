@@ -20,7 +20,6 @@ func main() {
 
 	// fmt.Printf("grade of the student is %.1f\n ", total)
 
-
 	var income float64
 
 	fmt.Println("Enter the annual income")
@@ -31,7 +30,6 @@ func main() {
 	fmt.Printf("Income tax amount = %.2f\n", tax)
 }
 
-
 func calculateTax(income float64) float64 {
 	var tax float64
 
@@ -41,11 +39,11 @@ func calculateTax(income float64) float64 {
 	case income <= 500000:
 		tax = (income - 250000) * 0.05
 	case income <= 1000000:
-		tax = (250000 * 0.05) + (income - 500000) * 0.20
+		tax = (250000 * 0.05) + (income-500000)*0.20
 	case income <= 5000000:
-		tax = (250000 * 0.05) + (500000 * 0.20) + (income - 1000000) * 0.30
+		tax = (250000 * 0.05) + (500000 * 0.20) + (income-1000000)*0.30
 	default:
-		tax = (250000 * 0.05) + (500000 * 0.20) + (4000000 * 0.30) + (income - 5000000) * 0.30
+		tax = (250000 * 0.05) + (500000 * 0.20) + (4000000 * 0.30) + (income-5000000)*0.30
 	}
 
 	return tax

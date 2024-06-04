@@ -11,7 +11,7 @@ func main() {
 
 	// var sum int
 
-	// for i := 1; i <= limit; i++ {
+	// for i := 0; i < limit; i++ {
 
 	// 	if i%2 != 0 {
 	// 		sum += i
@@ -22,8 +22,6 @@ func main() {
 
 	// fmt.Println(sum)
 
-	
-
 	// for i := 1; i <= 5; i++ {
 	// 	for j := 1; j <= i; j++ {
 	// 	   fmt.Print(j)
@@ -31,25 +29,17 @@ func main() {
 
 	// 	fmt.Println("")
 
-
 	// }
 
-  
- 
+	num := 1
 
-  num := 1
+	for i := 1; i <= 5; i++ {
+		for j := 1; j < i; j++ {
+			fmt.Printf("%v ", num)
+			num++
 
-  for i := 1; i <= 5; i++ {
-	for j := 1; j < i; j++ {
-		fmt.Printf("%v ",num)
-		num++
-		
+		}
+		fmt.Println("")
 	}
-	fmt.Println("")
-  }
-
-   
-
-
 
 }

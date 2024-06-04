@@ -20,7 +20,7 @@ func main() {
 	// 	fmt.Println("Failed")
 	// }
 
-	//Write a program to show the grade obtained by a student after he/she enters their total mark percentage.
+	// Write a program to show the grade obtained by a student after he/she enters their total mark percentage.
 
 	fmt.Println("Enter your total mark percentage:")
 

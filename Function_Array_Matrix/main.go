@@ -43,7 +43,7 @@ func display(arr [][]int, size int) {
     fmt.Println("Sum of array 1 and array 2:")
     for i := 0; i < size; i++ {
         for j := 0; j < size; j++ {
-            fmt.Printf("%4d", arr[i][j])
+            fmt.Printf("%d ", arr[i][j])
         }
         fmt.Println()
     }

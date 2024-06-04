@@ -34,9 +34,7 @@ func main() {
 		total[i] = arr[i] * arr[i+1]
 	}
 
-	// for _, value := range total {
-	// 	fmt.Printf("%v ", value)
-	// }
+	
 	fmt.Println(total)
 
 }
